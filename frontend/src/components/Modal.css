@@ -1,0 +1,49 @@
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(20, 23, 31, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  z-index: 50;
+}
+
+.modal-panel {
+  width: 100%;
+  max-width: 440px;
+  max-height: 85vh;
+  overflow-y: auto;
+  background: var(--surface);
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.1rem 1.3rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.modal-header h3 {
+  font-size: 1.05rem;
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  line-height: 1;
+  color: var(--text-muted);
+  padding: 0.1rem 0.3rem;
+  border-radius: 6px;
+}
+
+.modal-close:hover {
+  background: var(--canvas);
+  color: var(--text);
+}
+
+.modal-body {
+  padding: 1.3rem;
+}
